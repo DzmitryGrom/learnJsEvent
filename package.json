@@ -1,0 +1,22 @@
+{
+  "name": "learn-js-event",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start -s -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DzmitryGrom/learnJsEvent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DzmitryGrom/learnJsEvent/issues"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.4"
+  },
+  "homepage": "https://github.com/DzmitryGrom/learnJsEvent#readme"
+}
