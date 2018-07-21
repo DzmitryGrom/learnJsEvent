@@ -1,30 +1,35 @@
-showMenu(menu, 100, 10);
+(function () {
+  'use strict'
 
-function showMenu(element, x, y) {
-  let classList = element.classList,
-      style = element.style,
-      hideClass = 'hide',
-      pxUnit = 'px';
+  showMenu(menu, 100, 10);
 
-  style.left = x + pxUnit;
-  style.top = y + pxUnit;
+  function showMenu(element, x, y) {
+    let classList = element.classList,
+        style = element.style,
+        hideClass = 'hide',
+        pxUnit = 'px';
 
-  classList.remove(hideClass);
+    style.left = x + pxUnit;
+    style.top = y + pxUnit;
 
-  element.addEventListener('click', () => {
-    classList.add(hideClass);
-},
-  {
-    once: true
-  }
-)};
+    classList.remove(hideClass);
 
-document.addEventListener('contextmenu', function (e) {
-  event.preventDefault();
+    element.addEventListener('click', () => {
+      classList.add(hideClass);
+  },
+    {
+      once: true
+    }
+  )};
 
-  let x = event.clientX,
-      y = event.clientY;
+  document.addEventListener('contextmenu', function (e) {
+    event.preventDefault();
 
-  showMenu(menu, x, y);
+    let x = event.clientX,
+        y = event.clientY;
 
-}, false);
+    showMenu(menu, x, y);
+
+  }, false);
+
+})();
